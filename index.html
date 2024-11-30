@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Food Order App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="app">
+			<!-- Categories Section -->
+			<div id="categories">
+				<h1>Menu</h1>
+				<div class="category-list">
+					<!-- Category buttons will be added here dynamically -->
+				</div>
+			</div>
+
+			<!-- Food Items Section -->
+			<div id="menu">
+				<div id="menu-list" class="food-grid">
+					<!-- Food items will be displayed here -->
+				</div>
+			</div>
+
+			<!-- Your Order Section -->
+			<div id="order-section">
+				<h2>Your Order</h2>
+				<ul id="order-list">
+					<!-- Order items will be listed here -->
+				</ul>
+				<div id="total">Total: ₹<span id="total-price">0.00</span></div>
+				<button id="confirm-order-btn" onclick="confirmOrder()">
+					Confirm Order
+				</button>
+			</div>
+
+			<!-- Modal for Confirmation -->
+			<div id="confirmation-modal" class="modal">
+				<div class="modal-content">
+					<h2>Confirm Order</h2>
+					<p id="modal-total">Total: ₹0.00</p>
+					<div class="modal-buttons">
+						<button onclick="finalizeOrder()">Confirm</button>
+						<button onclick="closeModal()">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Floating Scroll to Bottom Button -->
+		<button
+			id="scroll-to-bottom-btn"
+			class="scroll-btn"
+			onclick="scrollToBottom()"
+		>
+			↓
+		</button>
+
+		<script src="app.js"></script>
+	</body>
+</html>

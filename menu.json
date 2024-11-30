@@ -1,0 +1,117 @@
+{
+	"categories": ["All", "V. Apps", "NV. Apps", "V. Meals", "P. Items"],
+	"items": [
+		{
+			"id": 1,
+			"name": "Moong Dal Pakoda",
+			"price": 40,
+			"category": "V. Apps",
+			"image": "pakoda.jpg"
+		},
+		{
+			"id": 2,
+			"name": "V. Manchurian (6pc)",
+			"price": 40,
+			"category": "V. Apps",
+			"image": "manchu.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Batata Vada (2pc)",
+			"price": 30,
+			"category": "V. Apps",
+			"image": "vada.jpg"
+		},
+		{
+			"id": 4,
+			"name": "Idli (3pc)",
+			"price": 40,
+			"category": "V. Meals",
+			"image": "idli.jpg"
+		},
+		{
+			"id": 5,
+			"name": "Appe (6pc)",
+			"price": 40,
+			"category": "V. Meals",
+			"image": "appe.jpg"
+		},
+		{
+			"id": 6,
+			"name": "Medu Vada (3pc)",
+			"price": 50,
+			"category": "V. Meals",
+			"image": "mvada.jpg"
+		},
+		{
+			"id": 7,
+			"name": "Dal Vada (2pc)",
+			"price": 20,
+			"category": "V. Meals",
+			"image": "dalvada.jpg"
+		},
+		{
+			"id": 8,
+			"name": "Dosa (3pc)",
+			"price": 40,
+			"category": "V. Meals",
+			"image": "dosa.jpg"
+		},
+		{
+			"id": 9,
+			"name": "Chicken Cutlet (2pc)",
+			"price": 80,
+			"category": "NV. Apps",
+			"image": "cultet.jpg"
+		},
+		{
+			"id": 10,
+			"name": "Chicken Spring Roll (4pc)",
+			"price": 80,
+			"category": "NV. Apps",
+			"image": "croll.jpg"
+		},
+		{
+			"id": 11,
+			"name": "Chicken 65",
+			"price": 120,
+			"category": "NV. Apps",
+			"image": "c65.jpg"
+		},
+		{
+			"id": 12,
+			"name": "Unniappam (8pc)",
+			"price": 40,
+			"category": "P. Items",
+			"image": "unni.jpg"
+		},
+		{
+			"id": 13,
+			"name": "Achappam (8pc)",
+			"price": 80,
+			"category": "P. Items",
+			"image": "achha.jpg"
+		},
+		{
+			"id": 14,
+			"name": "Kuzhalappam (8pc)",
+			"price": 60,
+			"category": "P. Items",
+			"image": "kuzha.jpg"
+		},
+		{
+			"id": 15,
+			"name": "Idli & Dosa Podi (50gm)",
+			"price": 20,
+			"category": "P. Items",
+			"image": "podi.jpg"
+		},
+		{
+			"id": 16,
+			"name": "Sambar Powder (50gm)",
+			"price": 30,
+			"category": "P. Items",
+			"image": "sambar.jpg"
+		}
+	]
+}
