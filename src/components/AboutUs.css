@@ -1,0 +1,174 @@
+/* Base styles */
+.about-us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: #2e2a25;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 70%;
+	background: rgba(255, 255, 255, 0.8);
+	background-size: cover;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.about-us-title {
+	font-family: "Playfair Display", serif;
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.about-us-description {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.chef-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.chef-photo {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%; /* Ensure circular shape */
+	margin-bottom: 1rem;
+	object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.chef-title {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.chef-description {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+/* Transition for fade-in effect */
+.fade-enter {
+	opacity: 0;
+	transform: translateY(10%);
+}
+
+.fade-enter-active {
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-exit {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.fade-exit-active {
+	opacity: 0;
+	transform: translateY(10%);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+	.about-us-banner {
+		width: 60%;
+	}
+
+	.about-us-title {
+		font-size: 2rem; /* Adjust title font size */
+	}
+
+	.about-us-description {
+		font-size: 1.1rem; /* Adjust description font size */
+	}
+
+	.chef-photo {
+		width: 100px; /* Adjust chef photo size */
+	}
+
+	.chef-title {
+		font-size: 1.3rem; /* Adjust chef title size */
+	}
+
+	.chef-description {
+		font-size: 0.9rem; /* Adjust chef description size */
+	}
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+	.about-us {
+		flex-direction: column;
+		padding: 1rem; /* Less padding for smaller screens */
+	}
+
+	.about-us-banner {
+		width: 90%; /* Increase width on mobile */
+		height: auto; /* Allow height to adjust naturally */
+	}
+
+	.about-us-title {
+		font-size: 1.8rem; /* Smaller title size */
+	}
+
+	.about-us-description {
+		font-size: 1rem; /* Adjust description font size */
+	}
+
+	.chef-info {
+		margin-top: 1.5rem;
+	}
+
+	.chef-photo {
+		width: 80px; /* Smaller chef photo on mobile */
+	}
+
+	.chef-title {
+		font-size: 1.2rem; /* Adjust chef title size */
+	}
+
+	.chef-description {
+		font-size: 0.9rem; /* Smaller description */
+	}
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+	.about-us-title {
+		font-size: 1.5rem; /* Reduce title font size */
+	}
+
+	.about-us-description {
+		font-size: 0.9rem; /* Reduce description font size */
+	}
+
+	.chef-photo {
+		width: 70px; /* Further reduce chef photo size */
+	}
+
+	.chef-title {
+		font-size: 1.1rem; /* Adjust chef title size */
+	}
+
+	.chef-description {
+		font-size: 0.8rem; /* Adjust chef description size */
+	}
+}

@@ -1,0 +1,90 @@
+/* Menu.css */
+.menu {
+	padding: 2rem;
+	background: inherit;
+	margin-top: 80px; /* Add top margin to push it below the navbar */
+}
+
+.menu-filter {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.filter-button {
+	background-color: #61dafb;
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	margin: 0.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.filter-button.active {
+	background-color: #2e2a25; /* Dark color for active filter */
+}
+
+.filter-button:hover {
+	background-color: #2e2a25;
+}
+
+.menu-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 columns */
+	gap: 2rem; /* Space between items */
+	max-width: 1200px; /* Max width of grid */
+	margin: 0 auto; /* Center the grid */
+}
+
+.menu-item {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	padding: 1rem;
+}
+
+.menu-image {
+	width: 150px;
+	height: 150px;
+	object-fit: cover; /* Ensures images don't stretch/distort */
+	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+.menu-name {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+.menu-price {
+	font-size: 1rem;
+	color: #2e2a25;
+	font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+	.menu-grid {
+		grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+	}
+}
+
+@media (max-width: 480px) {
+	.menu-grid {
+		grid-template-columns: 1fr; /* 1 column on mobile */
+	}
+}
+@media (max-width: 768px) {
+	.menu {
+		margin-top: 60px; /* Adjust for mobile screens */
+	}
+}
+
+@media (max-width: 480px) {
+	.menu {
+		margin-top: 50px; /* Adjust for very small screens */
+	}
+}

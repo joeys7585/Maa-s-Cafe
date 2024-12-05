@@ -1,0 +1,191 @@
+/* src/App.css or src/index.css */
+:root {
+	--primary-font: "Courier New", monospace;
+	--primary-color: #282c34;
+	--accent-color: #295a0d;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: url("assets/bg.jpg") center/cover no-repeat;
+	font-family: var(--primary-font);
+	overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+#root {
+	min-height: 100vh; /* Ensure the root takes at least full viewport height */
+	display: flex;
+	flex-direction: column; /* Ensure content stacks vertically */
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+	transition: transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: var(--primary-color);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	width: 100%;
+}
+
+.App-link {
+	color: var(--accent-color);
+	text-decoration: none;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Responsive design tweaks */
+@media (max-width: 768px) {
+	.App-header {
+		font-size: calc(8px + 3vmin);
+	}
+
+	.App-logo {
+		height: 30vmin;
+	}
+}
+
+@media (max-width: 480px) {
+	.App-header {
+		font-size: calc(7px + 4vmin);
+	}
+}
+/* Global Font Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Apply Open Sans as default font */
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: #f4f4f4; /* Background color for the website */
+	color: #2e2a25; /* Default text color */
+	line-height: 1.6;
+}
+
+/* Headings - Playfair Display for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Playfair Display", serif;
+	color: #2e2a25; /* Ensure headings have the same text color */
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 700; /* Bold for strong emphasis */
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	color: #4f4f4f; /* Slightly lighter for sub-headings */
+}
+
+/* Paragraphs - Open Sans for body text */
+p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	color: #2e2a25;
+}
+
+/* Accent Text (Buttons, CTAs) - Montserrat for clear calls to action */
+button,
+.cta-button,
+a {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600; /* Semi-bold for emphasis */
+	color: white; /* White text on buttons */
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border: none;
+	background-color: #2e2a25; /* Dark background for buttons */
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover,
+.cta-button:hover {
+	background-color: #61dafb; /* Light blue on hover */
+}
+
+/* Links - Montserrat for links */
+a {
+	font-family: "Montserrat", sans-serif;
+	color: #2e2a25;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Styling for navigation bar links */
+.navbar-link {
+	font-family: "Montserrat", sans-serif;
+	color: #2e2a25;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.navbar-link:hover {
+	color: #61dafb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+}

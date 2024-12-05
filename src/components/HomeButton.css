@@ -1,0 +1,22 @@
+/* src/components/HomeButton.css */
+.home-button-container {
+	position: fixed; /* Keeps the button fixed on the screen */
+	top: 20px;
+	left: 20px;
+	z-index: 10; /* Ensures it's on top of other content */
+}
+
+.home-button {
+	background-color: #2e2a25;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+	background-color: #8db38b;
+	transform: scale(1.05); /* Slight zoom effect */
+}

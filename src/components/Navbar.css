@@ -1,0 +1,105 @@
+/* src/components/Navbar.css */
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+	color: white;
+	z-index: 1000; /* Ensure navbar stays on top */
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: background-color 0.3s ease;
+}
+
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.navbar-logo {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+.navbar-logo-img {
+	height: 40px;
+	margin-right: 10px;
+}
+
+.navbar-business-name {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #295a0d; /* Accent color for business name */
+}
+
+.navbar-links {
+	display: flex;
+	gap: 2rem;
+	margin-right: 5rem;
+}
+
+.navbar-link {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+	color: #295a0d; /* Accent color on hover */
+}
+
+.navbar-hamburger {
+	display: none;
+	cursor: pointer;
+	font-size: 2rem;
+	margin-right: 5rem;
+}
+
+.navbar-hamburger .hamburger-icon {
+	color: white;
+}
+
+@media (max-width: 768px) {
+	.navbar-links {
+		display: none; /* Hide navbar links on small screens */
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
+		width: 100%;
+		padding: 1rem 0;
+	}
+
+	.navbar-links.active {
+		display: flex; /* Show links when the menu is open */
+	}
+
+	.navbar-hamburger {
+		display: block;
+	}
+
+	.navbar {
+		padding: 1rem; /* Adjust padding on smaller screens */
+	}
+
+	.navbar-logo {
+		flex-grow: 1;
+		justify-content: flex-start;
+	}
+}
+
+@media (max-width: 480px) {
+	.navbar-business-name {
+		font-size: 1.2rem; /* Smaller font size on very small screens */
+	}
+
+	.navbar-link {
+		font-size: 1rem; /* Smaller link font size on mobile */
+	}
+}

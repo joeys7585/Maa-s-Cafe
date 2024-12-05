@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+	--primary-color: #2e2a25;
+	--cta-bg: #2e2a25;
+	--cta-hover-bg: #8db38b;
+	--text-color: #2e2a25;
+}
+
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("../assets/bg.jpg") center/cover no-repeat, #f4f4f4; /* Added fallback */
+	background-size: cover;
+	color: var(--text-color);
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+}
+
+.home-banner {
+	max-width: 600px;
+	background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+	padding: 2rem;
+	border-radius: 10px;
+	animation: fadeIn 2s ease-out;
+}
+.logo-container {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.home-logo {
+	width: 150px;
+	height: 150px;
+	cursor: pointer; /* Make it clear the logo is clickable */
+}
+.navigate-message {
+	position: absolute;
+	top: 100%; /* Position the text below the logo */
+	left: 50%;
+	transform: translateX(-50%); /* Center the text horizontally */
+	opacity: 0;
+	visibility: hidden;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 0.5rem;
+	border-radius: 5px;
+	white-space: nowrap;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.logo-container:hover .navigate-message {
+	opacity: 1;
+	visibility: visible;
+}
+.home-title {
+	font-family: "Playfair Display", serif;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	animation: fadeIn 2s ease-out 1s;
+}
+
+.home-tagline {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	animation: fadeIn 2s ease-out 1.5s;
+}
+
+.cta-button {
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	background-color: var(--cta-bg);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	animation: fadeIn 2s ease-out 2s;
+}
+
+.cta-button:hover {
+	background-color: var(--cta-hover-bg);
+	transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.home-title {
+		font-size: 2.5rem;
+	}
+	.home-tagline {
+		font-size: 1.2rem;
+	}
+	.cta-button {
+		padding: 0.6rem 1.2rem;
+		font-size: 0.9rem;
+	}
+}
